@@ -146,6 +146,11 @@ void NewGameInitPCItems(void)
     for (i = 0, ClearPCItemSlots(); NEW_GAME_PC_ITEMS(i, PC_ITEM_ID) && NEW_GAME_PC_ITEMS(i, PC_QUANTITY) &&
                                     AddPCItem(NEW_GAME_PC_ITEMS(i, PC_ITEM_ID), NEW_GAME_PC_ITEMS(i, PC_QUANTITY)) == TRUE; i++)
         ;
+
+
+    if (!CheckPCHasItem(ITEM_AURORA_TICKET, 1)) {
+        AddPCItem(ITEM_AURORA_TICKET, 1);
+    }
 }
 
 void BedroomPC(void)
