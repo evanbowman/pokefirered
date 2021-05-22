@@ -151,6 +151,10 @@ void NewGameInitPCItems(void)
     if (!CheckPCHasItem(ITEM_AURORA_TICKET, 1)) {
         AddPCItem(ITEM_AURORA_TICKET, 1);
     }
+
+    if (!CheckPCHasItem(ITEM_MYSTIC_TICKET, 1)) {
+        AddPCItem(ITEM_MYSTIC_TICKET, 1);
+    }
 }
 
 void BedroomPC(void)
